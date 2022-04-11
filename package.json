@@ -1,0 +1,35 @@
+{
+  "name": "serverless-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "hongjinhyeok",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ./src/*",
+    "prod": "cross-env NODE_ENV=production nodemon --exec babel-node src/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
+    "test": "jest",
+    "testw": "jest --watch",
+    "testc": "jest --coverage"
+  },
+  "dependencies": {
+    "@types/jest": "^27.4.0",
+    "firebase-admin": "^10.0.2",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "path": "^0.12.7",
+    "prettier": "^2.5.1"
+  }
+}
